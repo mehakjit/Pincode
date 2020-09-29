@@ -8,7 +8,7 @@ public class VerifyPincode {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Welcome to pincode validation");
-		Pattern pincode = Pattern.compile("[0-9]{6}$");
+		Pattern pincode = Pattern.compile("^[1-9]{1}[0-9]{5}$");
 		System.out.println("Enter the 6-digit pincode");
 		String pattern = sc.nextLine();
 		Matcher matcher = pincode.matcher(pattern);
